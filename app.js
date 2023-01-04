@@ -35,7 +35,7 @@ for (i = 0; i < 20; i++) {
 	people.push(person);
 }
 const data = JSON.stringify(people);
-fs.writeFile('outputfile.txt', data, (err) => {
+fs.writeFile('people.json', data, (err) => {
 	if (err) console.log('Something went wrong');
 	console.log('File has been successfully generated! Check people.json');
 });
